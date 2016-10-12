@@ -1,0 +1,7 @@
+make sure your that your ATmega16u2 chip on Arduino UNO R3 is running HoodLoader2 and is in bootloader mode
+use avrdude to put hex file, make sure to replace with correct com port, in my example its COM5
+
+
+avrdude.exe -Cavrdude.conf -v -patmega16u2 -cavr109 -PCOM5 -b57600 -D -Uflash:w:arduigler.hex:i
+
+
